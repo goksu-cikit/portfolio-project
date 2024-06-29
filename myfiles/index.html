@@ -1,55 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
     <main>
-        <div class="section" id="home">
-            <div class="layer layer-background"></div>
-            <div class="layer layer-photo">
-                <img src="your-photo.jpg" alt="Your Photo" class="photo">
-            </div>
-            <div class="layer layer-overlay"></div>
-            <div class="layer layer-text">
-                <h1>John Doe</h1>
-                <h2>Web Developer</h2>
-                <p>Creating modern and responsive web applications.</p>
-            </div>
-        </div>
-        <div class="section" id="portfolio">
-            <div class="content">
-                <h2>Portfolio</h2>
-                <div class="projects">
-                    <div class="project">
-                        <h3>Project 1</h3>
-                        <p>Description of project 1.</p>
+      <div class="container">
+        <!-- Header Section -->
+        <header class="header d-flex justify-content-between align-items-center bg-dark p-2">
+            <div class="logo col-3 text-light ms-3"><a href="#logo" id="logo" class="text-decoration-none text-light">Sky Water</a></div>
+            <nav class="navbar d-flex flex-row me-3 my-2">
+                <div class="mx-3" id="nav-item"><a href="#about" id="about-nav" class="text-decoration-none text-light">About Me</a></div>
+                <div class="mx-3" id="nav-item"><a href="#projects" id="projects-nav" class="text-decoration-none text-light">Projects</a></div>
+                <div class="mx-3" id="nav-item"><a href="#skills" id="skills-nav" class="text-decoration-none text-light">Skills</a></div>
+                <div class="mx-3" id="nav-item"><a href="#contact" id="contact-nav" class="text-decoration-none text-light">Contact</a></div>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section class="d-flex flex-row mt-5 justify-content-between" id="about">
+            <article class="col-6 about-me">
+                <h2>Sky Water <span id="full-stack">(Full-Stack Web Developer)</span></h2>
+                <p class="about-text">
+                    Hello! My name is Sky Water, a passionate and dedicated web developer with over five years of experience in creating dynamic and responsive websites. I specialize in front-end development, with expertise in HTML, CSS, JavaScript, and frameworks such as React and Angular. My goal is to craft seamless and engaging user experiences, ensuring that every website I build is both visually appealing and highly functional.
+                    <br><br>
+                    I have a strong background in UI/UX design, allowing me to bridge the gap between design and development effectively. My projects range from small business websites to large-scale applications, always focusing on client satisfaction and innovative solutions.
+                    <br><br>
+                    When I’m not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or enjoying outdoor adventures. I believe in continuous learning and am always eager to take on new challenges. Let’s create something amazing together!
+                </p>
+            </article>
+            <figure class="col-4 main-image">
+                <img src="/images/F8185246-D687-4114-8E77-0A690E1F99E3.webp" id="about-image" alt="Portrait of Sky Water">
+                <figcaption>Sky Water - 2020</figcaption>
+            </figure>
+        </section>
+        <hr><hr>
+
+        <!-- Projects Section -->
+        <section class="d-flex flex-column justify-content-center align-items-center mb-3" id="projects">
+            <h1 class="mt-4 mb-3 projects-title">Projects</h1>
+            <div class="projects d-flex flex-row column-gap-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/fit-track-img.webp" class="card-img-top" alt="Fit-Track-App Image">
+                    <div class="card-body">
+                      <h4>Fit-Track App</h3>  
+                      <p class="card-text">A sleek fitness tracking app with a user-friendly dashboard, displaying health metrics, workout logs, and goals.</p>
                     </div>
-                    <div class="project">
-                        <h3>Project 2</h3>
-                        <p>Description of project 2.</p>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/recipe-hub-img.webp" class="card-img-top" alt="Recipe Hub App Image">
+                    <div class="card-body">
+                      <h4>Recipe Hub</h4>  
+                      <p class="card-text">A vibrant cooking recipes platform featuring high-quality food images, a variety of recipes, and user reviews.</p>
                     </div>
-                    <div class="project">
-                        <h3>Project 3</h3>
-                        <p>Description of project 3.</p>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/task-master-img.webp" class="card-img-top" alt="Task Master App Image">
+                    <div class="card-body">
+                      <h4>Task-Master App</h4>  
+                      <p class="card-text">A clean project management tool with task boards, collaboration features, and project timelines for efficient management.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section" id="contact">
-            <div class="content">
-                <h2>Contact</h2>
-                <p>Email: john.doe@example.com</p>
-                <p>Phone: +123 456 7890</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+        </section>
+        <hr><hr>
+
+        <!-- Skills Section -->
+        <section class="d-flex flex-column align-items-center justify-content-center mb-4" id="skills">
+            <h1 class="mt-4 mb-2 skills-title">
+                Skills
+            </h1>
+            <p class="col-8 text-center">
+                I specialize in front-end and back-end development, utilizing technologies such as HTML5, CSS3, Bootstrap, JavaScript, React, Angular, Vue, Figma, Git, GitHub, Node.js, SQL, AWS, and NPM. My skill set ensures robust, scalable, and user-friendly web applications tailored to meet diverse business needs.
+            </p>
+            <div class="icons d-flex flex-row column-gap-4" id="skills">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-angular"></i>
+                <i class="fa-brands fa-vuejs"></i>
+                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-node"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-aws"></i>
+                <i class="fa-brands fa-npm"></i>
             </div>
-        </div>
+        </section>
+        <hr><hr>
+        <!-- Contact Section -->
+        <section class="d-flex flex-column align-items-center justify-content-center mb-4" id="contact">
+            <h1 class="mt-4 mb-2 contacts-title">
+                Contacts
+            </h1>
+            <p class="col-8 text-center">
+                Feel free to reach out via email, phone, or LinkedIn for any inquiries or collaboration opportunities.
+            </p>
+            <div class="icons d-flex flex-row column-gap-4" id="contacts">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+
+        <!-- Up Button -->
+        <div class="btn btn-dark float-end mb-2">&uarr;</div>
+      </div>
     </main>
-    <footer>
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
+
+    <footer class="bg-dark">
+      <p class="text-light">&copy; 2024 Sky Water. All rights reserved. 🇩🇪</p>
     </footer>
-</body>
+
+    <!-- JS Files -->
+    <script src="/myfiles/app.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
