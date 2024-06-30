@@ -12,12 +12,19 @@ body {
     flex-direction: column;
 }
 
+#contact-main {
+    background-image: url('/./images/45BFCD52-E04D-4D5B-8483-4C64FE4169FC.webp');
+    background-size: cover; /* Arka plan resminin kapsaması için */
+    background-repeat: no-repeat; /* Tekrar etmemesi için */
+    background-position: center; /* Orta konumlandırma için */
+}
+
 main {
     flex: 1;
     background-color: #e1e0e0;
 }
 
-#logo {
+#logo-nav {
     font-weight: 500;
     font-size: 1.3rem;
 }
