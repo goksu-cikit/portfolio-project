@@ -35,10 +35,27 @@ main {
     text-align: justify;
 }
 
-#about-image {
+#about-image, #contact-image {
     width: 370px;
     height: 370px;
     border-radius: 10px;
+}
+
+.carousel-control-prev {
+    position: absolute; 
+    left: -40px; 
+    color: black;
+}
+
+.carousel-control-next {
+    position: absolute; 
+    right: -40px; 
+    color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* This makes the icons dark */
 }
 
 #full-stack {
@@ -51,8 +68,15 @@ main {
     font-size: 2.5rem;
 }
 
-.icons > * {
+
+
+.home-icons *{
     font-size: 2rem;
+    color:#615f5f;
+}
+
+#skills i {
+    font-size: 1.6rem;
     color:#615f5f;
 }
 
@@ -76,3 +100,53 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+
+/* Contact Page */
+#contact-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-page .contact-icons {
+    font-size: 1.2rem;
+    color:#615f5f;
+  }
+  
+  #contact-page .item1 {
+    padding: 10px 0;
+  }
+  
+  #contact-page .item1 strong {
+    min-width: 100px;
+    display: inline-block;
+  }
+  
+  #contact-page a {
+    color: #007bff;
+  }
+  
+  #contact-page a:hover {
+    text-decoration: underline;
+  }
+  
+  #contact-page .main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    #skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    #skills i {
+      margin-bottom: 20px;
+    }
+  }
