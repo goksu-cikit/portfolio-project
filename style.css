@@ -12,19 +12,16 @@ body {
     flex-direction: column;
 }
 
-#contact-main {
-    background-image: url('/./images/45BFCD52-E04D-4D5B-8483-4C64FE4169FC.webp');
-    background-size: cover; /* Arka plan resminin kapsaması için */
-    background-repeat: no-repeat; /* Tekrar etmemesi için */
-    background-position: center; /* Orta konumlandırma için */
-}
-
 main {
     flex: 1;
     background-color: #e1e0e0;
 }
 
-#logo-nav {
+#contact-main {
+    background-image: url('/images/45BFCD52-E04D-4D5B-8483-4C64FE4169FC.webp');
+}
+
+#logo {
     font-weight: 500;
     font-size: 1.3rem;
 }
@@ -110,39 +107,18 @@ footer p {
 
 /* Contact Page */
 #contact-page {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #contact-page .contact-icons {
+    height: 50vh;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.298);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+.contact-icons {
     font-size: 1.2rem;
     color:#615f5f;
-  }
-  
-  #contact-page .item1 {
-    padding: 10px 0;
-  }
-  
-  #contact-page .item1 strong {
-    min-width: 100px;
-    display: inline-block;
-  }
-  
-  #contact-page a {
-    color: #007bff;
-  }
-  
-  #contact-page a:hover {
-    text-decoration: underline;
-  }
-  
-  #contact-page .main-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+}
 
 /* Media Queries */
 @media screen and (max-width: 900px) {
@@ -155,5 +131,15 @@ footer p {
 
     #skills i {
       margin-bottom: 20px;
+    }
+
+    #contact-page {
+        height: 75vh;
+        padding-left: 20px;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.298);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.144);
     }
   }

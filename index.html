@@ -13,10 +13,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
@@ -24,33 +20,14 @@
     <main>
       <div class="container">
         <!-- Header Section -->
-        <header class="header bg-dark p-2">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="logo col-3 text-light ms-3">
-                        <a href="#logo" id="logo-nav" class="text-decoration-none text-light fs-2">Sky Water</a>
-                    </div>
-                    <button class="navbar-toggler" 
-                            type="button" 
-                            data-toggle="collapse" 
-                            data-target="#navbarNav" 
-                            aria-controls="navbarNav" 
-                            aria-expanded="false" 
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item mx-3"><a href="/myfiles/index.html" id="about-nav" class="nav-link">About Me</a></li>
-                                <li class="nav-item mx-3"><a href="#projects" id="projects-nav" class="nav-link">Projects</a></li>
-                                <li class="nav-item mx-3"><a href="#skills" id="skills-nav" class="nav-link">Skills</a></li>
-                                <li class="nav-item mx-3"><a href="/myfiles/contact.html" id="contact-nav" class="nav-link">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        <header class="header d-flex justify-content-between align-items-center bg-dark p-2">
+            <div class="logo col-3 text-light ms-3"><a href="#logo" id="logo" class="text-decoration-none text-light">Sky Water</a></div>
+            <nav class="navbar d-flex flex-row me-3 my-2">
+                <div class="mx-3" id="nav-item"><a href="/index.html" id="about-nav" class="text-decoration-none text-light">About Me</a></div>
+                <div class="mx-3" id="nav-item"><a href="#projects" id="projects-nav" class="text-decoration-none text-light">Projects</a></div>
+                <div class="mx-3" id="nav-item"><a href="#skills" id="skills-nav" class="text-decoration-none text-light">Skills</a></div>
+                <div class="mx-3" id="nav-item"><a href="/contact.html" id="contact-nav" class="text-decoration-none text-light">Contact</a></div>
+            </nav>
         </header>
 
         <!-- About Section -->
